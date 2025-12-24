@@ -1,35 +1,81 @@
-# Diabetes Prediction using Machine Learning
-Diabetes, is a group of metabolic disorders in which there are high blood sugar levels over a prolonged period. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death. Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes.
+# 🩺 Diabetes Prediction using Machine Learning
 
-This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset. Several constraints were placed on the selection of these instances from a larger database. In particular, all patients here are females at least 21 years old of Pima Indian heritage.
+## 📌 Project Overview
+Diabetes is a chronic metabolic disorder characterized by high blood sugar levels over a prolonged period. Common symptoms include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can lead to severe complications such as cardiovascular disease, stroke, kidney failure, nerve damage, eye damage, and even death.
 
-**Objective**
-We will try to build a machine learning model to accurately predict whether or not the patients in the dataset have diabetes or not?
+This project focuses on building a **Machine Learning model** to predict whether a patient has diabetes based on diagnostic medical measurements.
 
-**Details about the dataset:**
-The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
+---
 
-Pregnancies: Number of times pregnant
+## 🎯 Objective
+The main objective of this project is to:
+- Develop a machine learning model that can **accurately predict diabetes** in patients.
+- Analyze medical features to understand their impact on diabetes prediction.
+- Provide a data-driven approach to early diabetes detection.
 
-Glucose: Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+---
 
-BloodPressure: Diastolic blood pressure (mm Hg)
+## 📊 Dataset Description
+The dataset used in this project is originally from the **National Institute of Diabetes and Digestive and Kidney Diseases**.
 
-SkinThickness: Triceps skin fold thickness (mm)
+### 🔍 Dataset Characteristics
+- **Population**: Female patients of Pima Indian heritage
+- **Age Constraint**: At least 21 years old
+- **Total Observations**: 768
+- **Total Variables**: 9 (8 input features + 1 target variable)
 
-Insulin: 2-Hour serum insulin (mu U/ml)
+---
 
-BMI: Body mass index (weight in kg/(height in m)^2)
+## 🧾 Feature Information
 
-DiabetesPedigreeFunction: Diabetes pedigree function
+| Feature Name | Description |
+|--------------|------------|
+| **Pregnancies** | Number of times the patient has been pregnant |
+| **Glucose** | Plasma glucose concentration after 2 hours in an oral glucose tolerance test |
+| **BloodPressure** | Diastolic blood pressure (mm Hg) |
+| **SkinThickness** | Triceps skin fold thickness (mm) |
+| **Insulin** | 2-hour serum insulin (mu U/ml) |
+| **BMI** | Body Mass Index (kg/m²) |
+| **DiabetesPedigreeFunction** | Diabetes pedigree function (genetic influence) |
+| **Age** | Age of the patient (years) |
+| **Outcome** | Target variable (0 = Non-diabetic, 1 = Diabetic) |
 
-Age: Age (years)
+---
 
-Outcome: Class variable (0 or 1)
+## 🛠️ Methodology
+1. **Data Loading & Exploration**
+2. **Data Preprocessing**
+   - Handling missing or zero values
+   - Feature scaling
+3. **Exploratory Data Analysis (EDA)**
+4. **Model Building**
+   - Logistic Regression
+   - K-Nearest Neighbors (KNN)
+   - Support Vector Machine (SVM)
+   - Decision Tree
+   - Random Forest
+5. **Model Evaluation**
+   - Accuracy
+   - Confusion Matrix
+   - Precision, Recall, F1-score
+6. **Model Selection**
+   - Choosing the best-performing model
 
-Number of Observation Units: 768
+---
 
-Variable Number: 9
+## 📈 Results
+The trained machine learning models are evaluated based on performance metrics, and the best model is selected for diabetes prediction. The results demonstrate that machine learning can be effectively used to assist in early diagnosis of diabetes.
 
+---
 
-<img width="1920" height="1080" alt="Screenshot 2025-09-27 195942" src="https://github.com/user-attachments/assets/71c5860a-7199-4733-9d88-472c0d0f30af" />
+## 🚀 Technologies Used
+- Python
+- NumPy
+- Pandas
+- Matplotlib / Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## 📂 Project Structure
